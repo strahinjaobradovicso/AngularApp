@@ -4,6 +4,8 @@ import { RoundHours } from "./pipes/round-hours.pipe";
 import { HoursHighlight } from "./directives/hours-highlight.directive";
 import { TimeEntryService } from "./services/time-entry.service";
 import { TableComponent } from './components/table/table.component';
+import { ChartComponent } from "./components/chart/chart.component";
+import { ChartModule } from "angular-highcharts";
 
 @NgModule({
     declarations: [
@@ -11,8 +13,9 @@ import { TableComponent } from './components/table/table.component';
         RoundHours,
         HoursHighlight,
         TableComponent,
+        ChartComponent
     ],
-    imports: [],
+    imports: [ChartModule],
     providers: [TimeEntryService],
     exports: [
         TimeEntriesComponent

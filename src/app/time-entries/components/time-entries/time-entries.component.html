@@ -2,6 +2,8 @@
 
 @if(employeeHoursSignal.value(); as employeeHours){
     <app-table [employeeHours]="employeeHours"></app-table>
+    <hr>
+    <app-chart [employeeHours]="employeeHours"></app-chart>
 }
 
 @if(employeeHoursSignal.error(); as error){
