@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+th, td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+.tableHeader {
+    background: rgb(209, 209, 209);
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}

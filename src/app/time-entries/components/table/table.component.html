@@ -1,0 +1,14 @@
+<h2>Table</h2>
+<table>
+    <tr class="tableHeader">
+        <th>Name</th>
+        <th>Total Hours Worked</th>
+    </tr>
+
+    @for (item of employeeHours(); track $index) {
+        <tr hoursHighlight [hours]="item.total">
+            <td>{{item.name}}</td>
+            <td class="center">{{item.total | roundHours}}</td>
+        </tr>
+    }
+</table>

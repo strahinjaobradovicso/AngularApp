@@ -1,0 +1,9 @@
+
+
+@if(employeeHoursSignal.value(); as employeeHours){
+    <app-table [employeeHours]="employeeHours"></app-table>
+}
+
+@if(employeeHoursSignal.error(); as error){
+    <p>{{error}}</p>
+}
